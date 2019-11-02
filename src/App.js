@@ -28,13 +28,13 @@ function App() {
   return (
     <React.Fragment>
       <h1>Pokemons</h1>
-      <div>
+      <div className="container">
         {data &&
           data.pokemons &&
           data.pokemons.map((pokemon, index) => (
-            <div key={index}>
-              <img src={pokemon.image} alt="pokomen" />
-              <div>
+            <div key={index} className="card">
+              <img src={pokemon.image} />
+              <div class="card-body">
                 <h3>{pokemon.name}</h3>
                 <p>
                   {pokemon.evolutions && pokemon.evolutions.length !== 0 && (
@@ -49,8 +49,7 @@ function App() {
                 </p>
               </div>
             </div>
-          ))
-        }
+          ))}
       </div>
     </React.Fragment>
   );
