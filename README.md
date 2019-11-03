@@ -1,3 +1,7 @@
+# Simple GraphQL client playground
+It displays 150 pokemons and some additional info about them. 
+The project uses [Pokemon GraphQL API](https://graphql-pokemon.now.sh/) - try it out! 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
